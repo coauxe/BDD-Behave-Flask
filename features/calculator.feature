@@ -8,3 +8,8 @@ Feature: Confirming that the tip calculator form works
 		When I go to the tip calculator
     	And I submit the form with a valid total and tip percentage
     	Then I should see the results page
+
+    Scenario: check to see if meal total is correct
+    	When I go to the tip calculator
+    	And I submit the form with a valid total and tip percentage
+    	Then I should see the correct tip amount
