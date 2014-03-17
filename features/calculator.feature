@@ -13,3 +13,8 @@ Feature: Confirming that the tip calculator form works
     	When I go to the tip calculator
     	And I submit the form with a valid total and tip percentage
     	Then I should see the correct tip amount
+
+    Scenario: check to see if edge cases are handled
+        When I go to the tip calculator
+        And I enter an invalid number
+        Then I should see a message and the home page
